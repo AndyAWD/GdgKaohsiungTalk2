@@ -1,10 +1,38 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!--CheckBox，RadioButton之類的顏色-->
+        <item name="colorAccent">@color/primaryColor</item>
+        <!--狀態欄顏色-->
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+
+        <!--主顏色，影響Toolbar-->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <!--主顏色變體(?)-->
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <!--主顏色上的元件顏色-->
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+
+        <!--次顏色-->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <!--次顏色變體(?)-->
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+        <!--次顏色上的元件顏色-->
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+
+        <!--錯誤顏色-->
+        <item name="colorError">#b00020</item>
+        <!--錯誤顏色上的元件顏色-->
+        <item name="colorOnError">#ffffff</item>
+
+        <!--表層顏色-->
+        <item name="colorSurface">#ffffff</item>
+        <item name="colorOnSurface">#000000</item>
+
+        <!--底層背景色-->
+        <item name="android:colorBackground">#ffffff</item>
+        <!--底層背景色上的元件顏色-->
+        <item name="colorOnBackground">#000000</item>
     </style>
 
 </resources>
