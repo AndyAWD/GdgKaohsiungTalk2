@@ -35,4 +35,18 @@
         <item name="colorOnBackground">#000000</item>
     </style>
 
+    <style name="materialButtonStyle">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="layout_constraintDimensionRatio">1:1</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:backgroundTint">#333333</item>
+        <item name="iconTint">#f8f8f8</item>
+        <item name="rippleColor">#f8f8f8</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
 </resources>
