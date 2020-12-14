@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">GdgKaohsiungTalk2</string>
-
     <string name="one">1</string>
+    <string name="google"><font color="#1e90ff">G</font><font color="#b22222">o</font><font color="#ff8c00">o</font><font color="#1e90ff">g</font><font color="#228b22">l</font><font color="#b22222">e</font></string>
 </resources>
