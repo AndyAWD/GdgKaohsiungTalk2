@@ -2,4 +2,11 @@
     <string name="app_name">GdgKaohsiungTalk2</string>
     <string name="one">1</string>
     <string name="google"><font color="#1e90ff">G</font><font color="#b22222">o</font><font color="#ff8c00">o</font><font color="#1e90ff">g</font><font color="#228b22">l</font><font color="#b22222">e</font></string>
+    <string name="all">全部</string>
+    <string name="news">新聞</string>
+    <string name="picture">圖片</string>
+    <string name="map">地圖</string>
+    <string name="movie">影片</string>
+    <string name="shop">購物</string>
+    <string name="book">書籍</string>
 </resources>
