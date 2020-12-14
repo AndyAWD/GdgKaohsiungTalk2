@@ -105,119 +105,169 @@
         app:layout_constraintStart_toEndOf="@+id/clAmPageGroup"
         app:layout_constraintTop_toTopOf="@+id/tAmToolbarGroup" />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/atvAmSearchGroup"
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:background="@drawable/square_87ceeb_f8f8f8"
+        android:translationZ="@dimen/magic_8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tAmToolbarGroup" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/aivAmMenuPicture"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="@dimen/magic_16dp"
-        android:background="@drawable/ripple_f8f8f8_00000000"
-        android:clickable="true"
-        android:focusable="true"
-        android:padding="@dimen/magic_8dp"
-        android:src="@drawable/menu_svg"
-        app:layout_constraintBottom_toBottomOf="@+id/atvAmGoogleDoodle"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toStartOf="@+id/atvAmGoogleDoodle"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="@+id/atvAmSearchGroup"
-        app:layout_constraintTop_toTopOf="@+id/atvAmGoogleDoodle" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/atvAmGoogleDoodle"
-        android:layout_width="0dp"
-        android:layout_height="64dp"
-        android:layout_margin="@dimen/magic_8dp"
-        android:gravity="center"
-        android:inputType="text"
-        android:lines="1"
-        android:text="@string/google"
-        android:textStyle="bold"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="@+id/atvAmSearchGroup"
-        app:layout_constraintEnd_toStartOf="@+id/aivAmAvatar"
-        app:layout_constraintHorizontal_weight="6"
-        app:layout_constraintStart_toEndOf="@+id/aivAmMenuPicture"
-        app:layout_constraintTop_toTopOf="@+id/atvAmSearchGroup"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/aivAmAvatar"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="@dimen/magic_16dp"
-        android:padding="@dimen/magic_4dp"
-        android:src="@color/metroColor027_b81b1b"
-        app:layout_constraintBottom_toBottomOf="@+id/atvAmGoogleDoodle"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@+id/atvAmSearchGroup"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/atvAmGoogleDoodle"
-        app:layout_constraintTop_toTopOf="@+id/atvAmGoogleDoodle"
-        app:shapeAppearanceOverlay="@style/ShapeableImageView_Circle"
-        tools:src="@tools:sample/avatars" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clAmSearchGroup"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="@dimen/magic_16dp"
-        android:layout_marginTop="@dimen/magic_16dp"
-        android:layout_marginEnd="@dimen/magic_16dp"
-        android:background="@drawable/rounded_f8f8f8_width1_808080_radius40"
-        app:layout_constraintBottom_toBottomOf="@+id/atvAmSearchGroup"
-        app:layout_constraintEnd_toEndOf="@+id/atvAmSearchGroup"
-        app:layout_constraintStart_toStartOf="@+id/atvAmSearchGroup"
-        app:layout_constraintTop_toBottomOf="@+id/atvAmGoogleDoodle">
+        app:layout_constraintTop_toBottomOf="@+id/tAmToolbarGroup">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/aivAmSearchPicture"
+            android:id="@+id/aivAmMenuPicture"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="@dimen/magic_8dp"
-            android:padding="@dimen/magic_4dp"
-            android:src="@drawable/ic_baseline_search_24"
-            app:layout_constraintBottom_toBottomOf="@+id/clAmSearchGroup"
-            app:layout_constraintEnd_toStartOf="@+id/aetAmSearchText"
-            app:layout_constraintHorizontal_chainStyle="packed"
+            android:layout_marginStart="@dimen/magic_16dp"
+            android:background="@drawable/ripple_f8f8f8_00000000"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/magic_8dp"
+            android:src="@drawable/menu_svg"
+            app:layout_constraintBottom_toBottomOf="@+id/atvAmGoogleDoodle"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/atvAmGoogleDoodle"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintHorizontal_weight="1"
-            app:layout_constraintStart_toStartOf="@+id/clAmSearchGroup"
-            app:layout_constraintTop_toTopOf="@+id/clAmSearchGroup" />
+            app:layout_constraintStart_toStartOf="@+id/atvAmSearchGroup"
+            app:layout_constraintTop_toTopOf="@+id/atvAmGoogleDoodle" />
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/aetAmSearchText"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/atvAmGoogleDoodle"
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@null"
+            android:layout_height="64dp"
+            android:layout_margin="@dimen/magic_8dp"
+            android:gravity="center"
             android:inputType="text"
             android:lines="1"
-            android:textColor="@color/primaryTextColor"
-            app:layout_constraintBottom_toBottomOf="@+id/clAmSearchGroup"
-            app:layout_constraintEnd_toStartOf="@+id/aivAmClosePicture"
-            app:layout_constraintHorizontal_weight="8"
-            app:layout_constraintStart_toEndOf="@+id/aivAmSearchPicture"
-            app:layout_constraintTop_toTopOf="@+id/clAmSearchGroup" />
+            android:text="@string/google"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="@+id/atvAmSearchGroup"
+            app:layout_constraintEnd_toStartOf="@+id/aivAmAvatar"
+            app:layout_constraintHorizontal_weight="6"
+            app:layout_constraintStart_toEndOf="@+id/aivAmMenuPicture"
+            app:layout_constraintTop_toTopOf="@+id/atvAmSearchGroup"
+            app:layout_constraintVertical_bias="0.0" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/aivAmClosePicture"
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/aivAmAvatar"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginEnd="@dimen/magic_8dp"
+            android:layout_marginEnd="@dimen/magic_16dp"
             android:padding="@dimen/magic_4dp"
-            android:src="@drawable/ic_baseline_close_24"
-            app:layout_constraintBottom_toBottomOf="@+id/clAmSearchGroup"
-            app:layout_constraintEnd_toEndOf="@+id/clAmSearchGroup"
+            android:src="@color/metroColor027_b81b1b"
+            app:layout_constraintBottom_toBottomOf="@+id/atvAmGoogleDoodle"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@+id/atvAmSearchGroup"
             app:layout_constraintHorizontal_weight="1"
-            app:layout_constraintStart_toEndOf="@+id/aetAmSearchText"
-            app:layout_constraintTop_toTopOf="@+id/clAmSearchGroup" />
+            app:layout_constraintStart_toEndOf="@+id/atvAmGoogleDoodle"
+            app:layout_constraintTop_toTopOf="@+id/atvAmGoogleDoodle"
+            app:shapeAppearanceOverlay="@style/ShapeableImageView_Circle"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clAmSearchGroup"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/magic_16dp"
+            android:layout_marginTop="@dimen/magic_16dp"
+            android:layout_marginEnd="@dimen/magic_16dp"
+            android:background="@drawable/rounded_f8f8f8_width1_808080_radius40"
+            app:layout_constraintBottom_toBottomOf="@+id/atvAmSearchGroup"
+            app:layout_constraintEnd_toEndOf="@+id/atvAmSearchGroup"
+            app:layout_constraintStart_toStartOf="@+id/atvAmSearchGroup"
+            app:layout_constraintTop_toBottomOf="@+id/atvAmGoogleDoodle">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/aivAmSearchPicture"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/magic_8dp"
+                android:padding="@dimen/magic_4dp"
+                android:src="@drawable/ic_baseline_search_24"
+                app:layout_constraintBottom_toBottomOf="@+id/clAmSearchGroup"
+                app:layout_constraintEnd_toStartOf="@+id/aetAmSearchText"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="@+id/clAmSearchGroup"
+                app:layout_constraintTop_toTopOf="@+id/clAmSearchGroup" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/aetAmSearchText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:inputType="text"
+                android:lines="1"
+                android:textColor="@color/primaryTextColor"
+                app:layout_constraintBottom_toBottomOf="@+id/clAmSearchGroup"
+                app:layout_constraintEnd_toStartOf="@+id/aivAmClosePicture"
+                app:layout_constraintHorizontal_weight="8"
+                app:layout_constraintStart_toEndOf="@+id/aivAmSearchPicture"
+                app:layout_constraintTop_toTopOf="@+id/clAmSearchGroup" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/aivAmClosePicture"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/magic_8dp"
+                android:padding="@dimen/magic_4dp"
+                android:src="@drawable/ic_baseline_close_24"
+                app:layout_constraintBottom_toBottomOf="@+id/clAmSearchGroup"
+                app:layout_constraintEnd_toEndOf="@+id/clAmSearchGroup"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/aetAmSearchText"
+                app:layout_constraintTop_toTopOf="@+id/clAmSearchGroup" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="#f8f8f8"
+        android:translationZ="@dimen/magic_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atvAmSearchGroup"
+        app:tabIndicatorHeight="@dimen/magic_4dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/secondaryColor">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/all" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/news" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/picture" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/picture" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/movie" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/shop" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/book" />
+    </com.google.android.material.tabs.TabLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
