@@ -384,7 +384,7 @@
                     android:id="@+id/mtvAmFindGdgKaohsiung"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/magic_16dp"
+                    android:layout_marginBottom="@dimen/magic_8dp"
                     android:paddingStart="@dimen/magic_16dp"
                     android:paddingTop="@dimen/magic_8dp"
                     android:paddingEnd="@dimen/magic_16dp"
