@@ -277,6 +277,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/magic_16dp"
+        android:clickable="true"
+        android:focusable="true"
         app:cardBackgroundColor="#f8f8f8"
         app:cardCornerRadius="@dimen/magic_16dp"
         app:cardElevation="@dimen/magic_8dp"
