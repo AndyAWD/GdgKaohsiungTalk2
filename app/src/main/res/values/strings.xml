@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GdgKaohsiungTalk2</string>
     <string name="one">1</string>
-    <string name="google"><font color="#1e90ff">G</font><font color="#b22222">o</font><font color="#ff8c00">o</font><font color="#1e90ff">g</font><font color="#228b22">l</font><font color="#b22222">e</font></string>
+    <string name="google_color"><font color="#1e90ff">G</font><font color="#b22222">o</font><font color="#ff8c00">o</font><font color="#1e90ff">g</font><font color="#228b22">l</font><font color="#b22222">e</font></string>
     <string name="all">全部</string>
     <string name="news">新聞</string>
     <string name="picture">圖片</string>
@@ -9,4 +9,9 @@
     <string name="movie">影片</string>
     <string name="shop">購物</string>
     <string name="book">書籍</string>
+    <string name="google_url"><font color="#b22222">G</font>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;www.google.com</string>
+    <string name="google">Google</string>
+    <string name="gdg_kaohsiung">GDG&#160;Kaohsiung</string>
+    <string name="google_find_text">Account Options. 登入 · 搜尋設定 · 網頁記錄. Google. 進階搜尋 · 廣告服務關於GoogleGoogle.com in English. © 2020 - 隱私權 - 服務條款.</string>
 </resources>
+
