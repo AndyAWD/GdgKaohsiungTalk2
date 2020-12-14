@@ -141,7 +141,7 @@
             android:gravity="center"
             android:inputType="text"
             android:lines="1"
-            android:text="@string/google"
+            android:text="@string/google_color"
             android:textStyle="bold"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toBottomOf="@+id/atvAmSearchGroup"
@@ -224,6 +224,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlAmSearchGroup"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:background="#f8f8f8"
@@ -270,4 +271,125 @@
             android:layout_height="48dp"
             android:text="@string/book" />
     </com.google.android.material.tabs.TabLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvAmFindGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/magic_16dp"
+        app:cardBackgroundColor="#f8f8f8"
+        app:cardCornerRadius="@dimen/magic_16dp"
+        app:cardElevation="@dimen/magic_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlAmSearchGroup"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAmFindUrl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/magic_16dp"
+                android:text="@string/google_url"
+                android:textColor="@color/primaryTextColor"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toTopOf="@+id/mtvAmFindTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAmFindTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/magic_16dp"
+                android:paddingTop="@dimen/magic_8dp"
+                android:paddingEnd="@dimen/magic_16dp"
+                android:paddingBottom="@dimen/magic_8dp"
+                android:text="@string/google"
+                android:textColor="#1e90ff"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/mtvAmFindText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvAmFindUrl" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAmFindText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/magic_16dp"
+                android:text="@string/google_find_text"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/mtvAmHorizontalLine1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvAmFindTitle" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAmHorizontalLine1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/magic_1dp"
+                android:layout_marginStart="@dimen/magic_16dp"
+                android:layout_marginEnd="@dimen/magic_16dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvAmFindText" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAmFindGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/magic_16dp"
+                android:paddingTop="@dimen/magic_8dp"
+                android:paddingEnd="@dimen/magic_16dp"
+                android:paddingBottom="@dimen/magic_8dp"
+                android:text="@string/google"
+                android:textColor="#1e90ff"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/mtvAmHorizontalLine2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvAmHorizontalLine1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAmHorizontalLine2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/magic_1dp"
+                android:layout_marginStart="@dimen/magic_16dp"
+                android:layout_marginEnd="@dimen/magic_16dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvAmFindGoogle" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAmFindGdgKaohsiung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/magic_16dp"
+                android:paddingStart="@dimen/magic_16dp"
+                android:paddingTop="@dimen/magic_8dp"
+                android:paddingEnd="@dimen/magic_16dp"
+                android:paddingBottom="@dimen/magic_8dp"
+                android:text="@string/gdg_kaohsiung"
+                android:textColor="#1e90ff"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvAmHorizontalLine2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
