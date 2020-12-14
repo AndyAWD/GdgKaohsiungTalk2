@@ -86,7 +86,7 @@
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/magic_16dp"
             android:background="@drawable/rounded_hollow_f8f8f8_radius80"
             android:gravity="center"
             android:text="@string/one"
